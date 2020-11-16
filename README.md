@@ -24,6 +24,8 @@ The spoilerblock html would search through all DOM elements looking for "cite_re
 - Step 6: Paste in common.css code and save
 - Step 7: Refresh your browser
 
+\*\*\* You need the ability to create pages in order for this to work!
+
 ## Example of hidden text
 
 ![alt text](https://github.com/ALeonard9/spoilerblock/raw/main/mockup_hidden.png "Example of hidden text.")

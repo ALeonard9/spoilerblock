@@ -1,0 +1,42 @@
+<script>
+  // Collect all citations containing Dawnshared
+  // TODO: Dawnshard is hard coded. Would replace with any unread books.
+  var spoilers = document.querySelectorAll('\*[id^="cite_ref-Dawnshard"]');
+
+  // Add the spoiler class to the parent element of all citations
+  spoilers.forEach(function (userItem) {
+    userItem.parentElement.classList.add("spoiler");
+  });
+</script>
+<style>
+  /* Black out any spoilers */
+  .spoiler {
+    color: black;
+    background-color: black;
+  }
+
+  .spoiler a:link {
+    color: black;
+    background-color: black;
+  }
+
+  .spoiler a:visited {
+    color: black;
+    background-color: black;
+  }
+
+  /* When hovered over, reveal original text. */
+  .spoiler:hover {
+    background-color: white;
+  }
+
+  .spoiler:hover a:link {
+    background-color: white;
+    color: blue;
+  }
+
+  .spoiler:hover a:visited {
+    background-color: white;
+    color: blueviolet;
+  }
+</style>

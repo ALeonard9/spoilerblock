@@ -14,5 +14,10 @@ The id contains the name of the book, chapter, etc.
 
 The spoilerblock html would search through all DOM elements looking for "cite_ref-<Book>" and change the style to a new class called "spoiler". The spoiler class has a black background and black text, which is removed when hovered over.
 
+## Example of hidden text
+
 ![alt text](https://github.com/ALeonard9/spoilerblock/raw/main/mockup_hidden.png "Example of hidden text.")
+
+## Example of revealed text (by hovering over)
+
 ![alt text](https://github.com/ALeonard9/spoilerblock/raw/main/mockup_revealed.png "Example of revealed text.")

@@ -26,6 +26,11 @@ The spoilerblock html would search through all DOM elements looking for "cite_re
 
 \*\*\* You need the ability to create pages in order for this to work!
 
+## Blocking spoilers for multiple books
+
+In order to block more than one book, you'll need to add a comma and copy the RegEx within the Selector. Here is an example:
+`var spoilers = document.querySelectorAll('\*[id^="cite_ref-Dawnshard"], \*[id^="cite_ref-Oath"]');`
+
 ## Example of hidden text
 
 ![alt text](https://github.com/ALeonard9/spoilerblock/raw/main/mockup_hidden.png "Example of hidden text.")

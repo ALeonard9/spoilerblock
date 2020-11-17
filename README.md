@@ -1,10 +1,10 @@
 # spoilerblock
 
-Users of ![alt text](https://coppermind.net "the Coppermind") (or any MediaWiki fandom site) can hide paragraphs containing spoilers of particular books.
+Users of [the Coppermind](https://coppermind.net) (or any MediaWiki fandom site) can hide paragraphs containing spoilers of particular books.
 
 ## How to implement
 
-> **Note**: You need the ability to create pages on the Coppermind in order for this to work! If you do not already have these permissions, please follow the steps [here!](https://coppermind.net/wiki/Help:Getting_Started).
+> **Note**: You need the ability to create pages on the Coppermind in order for this to work! If you do not already have these permissions, please follow the steps [here](https://coppermind.net/wiki/Help:Getting_Started){:target="_blank"}.
 
 - Step 1: Navigate to your common.js page at https://coppermind.net/wiki/User:YOURUSERNAME/common.js
 - Step 2: Create Source
@@ -14,8 +14,12 @@ Users of ![alt text](https://coppermind.net "the Coppermind") (or any MediaWiki 
 - Step 6: Paste in common.css code and save
 - Step 7: Refresh your browser
 
+## Blocking spoilers for multiple books
 
-## Coppermind Structure
+In order to block more than one book, you'll need to add a comma and copy the RegEx within the Selector. Here is an example:
+`var spoilers = document.querySelectorAll('\*[id^="cite_ref-Dawnshard"], \*[id^="cite_ref-Oath"]');`
+
+## ADVANCED: Coppermind Structure
 
 Annotations use the superscript data type ('sup' ) to denote references.
 
@@ -27,11 +31,6 @@ The id contains the name of the book, chapter, etc.
 
 The spoilerblock html would search through all DOM elements looking for "cite_ref-BOOK" and change the style to a new class called "spoiler". The spoiler class has a black background and black text, which is removed when hovered over.
 
-
-## Blocking spoilers for multiple books
-
-In order to block more than one book, you'll need to add a comma and copy the RegEx within the Selector. Here is an example:
-`var spoilers = document.querySelectorAll('\*[id^="cite_ref-Dawnshard"], \*[id^="cite_ref-Oath"]');`
 
 ## Example of hidden text
 
